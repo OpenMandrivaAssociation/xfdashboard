@@ -9,7 +9,7 @@
 
 Name:		xfdashboard
 Version:	0.7.7
-Release:	%mkrel 1
+Release:	1
 Summary:	GNOME shell like dashboard for Xfce
 Group:		Graphical desktop/Xfce
 License:	GPLv2+
