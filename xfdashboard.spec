@@ -22,7 +22,7 @@ BuildRequires:	pkgconfig(garcon-1)
 BuildRequires:	pkgconfig(libwnck-3.0)
 BuildRequires:	pkgconfig(xcomposite)
 BuildRequires:	pkgconfig(xdamage)
-#BuildRequires:	xfce4-dev-tools
+BuildRequires:	xfce4-dev-tools
 
 %description
 Xfdashboard provides a GNOME shell dashboard like interface for use with Xfce
@@ -51,6 +51,7 @@ This package contains the development files and headers for %{name}.
 %autopatch -p1
 
 %build
+NOCONFIGURE=1 xdt-autogen
 %configure
 %make_build
 
