@@ -23,6 +23,8 @@ BuildRequires:	pkgconfig(libwnck-3.0)
 BuildRequires:	pkgconfig(xcomposite)
 BuildRequires:	pkgconfig(xdamage)
 BuildRequires:	xfce4-dev-tools
+BuildRequires:  gettext-devel
+BuildRequires:  gettext
 
 %description
 Xfdashboard provides a GNOME shell dashboard like interface for use with Xfce
