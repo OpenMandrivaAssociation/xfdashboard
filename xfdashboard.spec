@@ -1,4 +1,5 @@
 %define url_ver	%(echo %{version} | cut -d. -f1,2)
+%define _disable_rebuild_configure 1
 
 %define major	0
 %define libname	%mklibname %{name} %{major}
@@ -53,15 +54,12 @@ This package contains the development files and headers for %{name}.
 %autopatch -p1
 
 %build
-NOCONFIGURE=1 xdt-autogen
+#NOCONFIGURE=1 xdt-autogen
 %configure
 %make_build
 
 %install
 %make_install
-
-#we don't want these
-find %{buildroot} -name "*.la" -delete
 
 %find_lang %{name}
 
