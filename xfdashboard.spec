@@ -78,6 +78,7 @@ This package contains the development files and headers for %{name}.
 %dir %{_libdir}/%{name}/plugins/
 %{_libdir}/%{name}/plugins/clock-view.so
 %{_libdir}/%{name}/plugins/gnome-shell-search-provider.so
+%{_libdir}/%{name}/plugins/example-search-provider.so
 %{_libdir}/%{name}/plugins/hot-corner.so
 %{_libdir}/%{name}/plugins/middle-click-window-close.so
 
