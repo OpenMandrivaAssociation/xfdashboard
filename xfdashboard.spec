@@ -9,7 +9,7 @@
 %global __provides_exclude_from %{_libdir}/%{name}/plugins/.*\\.so
 
 Name:		xfdashboard
-Version:	0.7.7
+Version:	0.7.8
 Release:	1
 Summary:	GNOME shell like dashboard for Xfce
 Group:		Graphical desktop/Xfce
@@ -64,7 +64,7 @@ This package contains the development files and headers for %{name}.
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc AUTHORS ChangeLog README
+%doc AUTHORS ChangeLog README.md
 %{_bindir}/xfdashboard*
 %{_datadir}/%{name}/
 %{_datadir}/themes/%{name}*/
@@ -78,6 +78,7 @@ This package contains the development files and headers for %{name}.
 %dir %{_libdir}/%{name}/plugins/
 %{_libdir}/%{name}/plugins/clock-view.so
 %{_libdir}/%{name}/plugins/gnome-shell-search-provider.so
+%{_libdir}/%{name}/plugins/example-search-provider.so
 %{_libdir}/%{name}/plugins/hot-corner.so
 %{_libdir}/%{name}/plugins/middle-click-window-close.so
 
