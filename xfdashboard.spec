@@ -71,7 +71,7 @@ This package contains the development files and headers for %{name}.
 %{_sysconfdir}/xdg/autostart/%{name}-autostart.desktop
 %{_datadir}/applications/%{name}*.desktop
 %{_datadir}/appdata/%{name}.appdata.xml
-%{_iconsdir}/hicolor/*/apps/%{name}.png
+#{_iconsdir}/hicolor/*/apps/%{name}.png
 
 #plugins
 %dir %{_libdir}/%{name}/
