@@ -9,7 +9,7 @@
 %global __provides_exclude_from %{_libdir}/%{name}/plugins/.*\\.so
 
 Name:		xfdashboard
-Version:	0.7.8
+Version:	0.8.0
 Release:	1
 Summary:	GNOME shell like dashboard for Xfce
 Group:		Graphical desktop/Xfce
@@ -54,7 +54,7 @@ This package contains the development files and headers for %{name}.
 %autopatch -p1
 
 %build
-#NOCONFIGURE=1 xdt-autogen
+#NOCONFIGURE=1
 %configure
 %make_build
 
