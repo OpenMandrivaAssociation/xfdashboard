@@ -68,9 +68,10 @@ This package contains the development files and headers for %{name}.
 %{_bindir}/xfdashboard*
 %{_datadir}/%{name}/
 %{_datadir}/themes/%{name}*/
-#{_sysconfdir}/xdg/autostart/%{name}-autostart.desktop
-#{_datadir}/applications/%{name}*.desktop
-#{_datadir}/appdata/%{name}.appdata.xml
+%{_sysconfdir}//autostart/org.xfce.xfdashboard-autostart.desktop
+%{_datadir}/applications/org.xfce.xfdashboard-settings.desktop
+%{_datadir}/applications/org.xfce.xfdashboard.desktop
+%{_datadir}/metainfo/org.xfce.xfdashboard.metainfo.xml
 %{_iconsdir}/hicolor/*x*/apps/org.xfce.xfdashboard.png
 %{_iconsdir}/hicolor/scalable/apps/org.xfce.xfdashboard.svg
 
