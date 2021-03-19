@@ -68,9 +68,9 @@ This package contains the development files and headers for %{name}.
 %{_bindir}/xfdashboard*
 %{_datadir}/%{name}/
 %{_datadir}/themes/%{name}*/
-%{_sysconfdir}/xdg/autostart/%{name}-autostart.desktop
-%{_datadir}/applications/%{name}*.desktop
-%{_datadir}/appdata/%{name}.appdata.xml
+#{_sysconfdir}/xdg/autostart/%{name}-autostart.desktop
+#{_datadir}/applications/%{name}*.desktop
+#{_datadir}/appdata/%{name}.appdata.xml
 %{_iconsdir}/hicolor/*x*/apps/org.xfce.xfdashboard.png
 %{_iconsdir}/hicolor/scalable/apps/org.xfce.xfdashboard.svg
 
@@ -79,7 +79,7 @@ This package contains the development files and headers for %{name}.
 %dir %{_libdir}/%{name}/plugins/
 %{_libdir}/%{name}/plugins/clock-view.so
 %{_libdir}/%{name}/plugins/gnome-shell-search-provider.so
-%{_libdir}/%{name}/plugins/example-search-provider.so
+#{_libdir}/%{name}/plugins/example-search-provider.so
 %{_libdir}/%{name}/plugins/hot-corner.so
 %{_libdir}/%{name}/plugins/middle-click-window-close.so
 
