@@ -9,7 +9,7 @@
 %global __provides_exclude_from %{_libdir}/%{name}/plugins/.*\\.so
 
 Name:		xfdashboard
-Version:	0.9.1
+Version:	0.9.2
 Release:	1
 Summary:	GNOME shell like dashboard for Xfce
 Group:		Graphical desktop/Xfce
