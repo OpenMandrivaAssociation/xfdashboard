@@ -84,6 +84,7 @@ This package contains the development files and headers for %{name}.
 %{_libdir}/%{name}/plugins/hot-corner.so
 %{_libdir}/%{name}/plugins/middle-click-window-close.so
 %{_libdir}/%{name}/plugins/recently-used-search-provider.so
+%{_libdir}/%{name}/plugins/autopin-windows.so
 
 %files -n %{libname}
 %{_libdir}/lib%{name}.so.%{major}
