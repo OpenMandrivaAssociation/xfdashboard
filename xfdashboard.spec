@@ -16,6 +16,11 @@ Group:		Graphical desktop/Xfce
 License:	GPLv2+
 URL:		https://goodies.xfce.org/projects/applications/xfdashboard/start
 Source0:	https://archive.xfce.org/src/apps/xfdashboard/%{url_ver}/xfdashboard-%{version}.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(clutter-1.0)
 BuildRequires:	pkgconfig(dbus-glib-1)
