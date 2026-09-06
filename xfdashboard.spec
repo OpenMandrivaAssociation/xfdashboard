@@ -16,10 +16,7 @@ Group:		Graphical desktop/Xfce
 License:	GPLv2+
 URL:		https://goodies.xfce.org/projects/applications/xfdashboard/start
 Source0:	https://archive.xfce.org/src/apps/xfdashboard/%{url_ver}/xfdashboard-%{version}.tar.bz2
-BuildRequires:	autoconf
-BuildRequires:	automake
-BuildRequires:	libtool-base
-BuildRequires:	slibtool
+BuildRequires:	meson
 BuildRequires:	make
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(clutter-1.0)
@@ -59,12 +56,11 @@ This package contains the development files and headers for %{name}.
 %autopatch -p1
 
 %build
-#NOCONFIGURE=1
-%configure
-%make_build
+%meson
+%meson_build
 
 %install
-%make_install
+%meson_install
 
 %find_lang %{name}
 
