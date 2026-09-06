@@ -65,7 +65,7 @@ This package contains the development files and headers for %{name}.
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc AUTHORS ChangeLog README.md
+%doc AUTHORS README.md
 %{_bindir}/xfdashboard*
 %{_datadir}/%{name}/
 %{_datadir}/themes/%{name}*/
